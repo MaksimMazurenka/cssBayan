@@ -35,10 +35,11 @@ p.description{
     cursor: pointer;
 }
 div.plus{
-    float:right;
     background: url(https://psv4.userapi.com/c237131/u416429257/docs/d39/cc5ce405afd4/plus40.png?extra=Ux4NBBi96nZLz9VvinMM3Gty2o8qwSB6W9gTdyW4Ef-x15XE4GkuxnrOZ2OIRizRBdOsy6flaQCZPbLdEpITQk3L_Nmd7hT9J4m2u5e_oMlNBQ9_KCGSDoDskQhKZgHRtCECInBoSMbkixFl6q8dY7A);
     width: 40px;
     height: 40px;
+    position: relative;
+    left: 18%;
 }
 input[name="mem"]:hover + label div div.plus
 {
@@ -51,42 +52,20 @@ div.img{
 div.stroka{
     display: flex;
     align-items: center;
-    width: 600px;
 }
 @media (min-width: 320px) {
     p{
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        width: 320;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
     }
     hr{
-        width: 320px;
-    }
-    img{
-        width: 200px;
-        height: 150px;
-    }
-    div.img{
-        position:relative;
-        left: 0%;
-    }
-    .meme{
+        width: 700px;
         position: relative;
-        left: 10%;
-    }
-  }
-  @media (min-width: 820px) {
-    p{
-        font-family:'Courier New', Courier, monospace;
-        font-size: 30px;
-    }
-    hr{
-        width: 820px;
+        left: 20%;
     }
     img{
-        width: 400px;
-        height: 300px;
+        width: 800px;
+        height: 600px;
     }
     div.img{
         position:relative;
@@ -95,29 +74,6 @@ div.stroka{
     .meme{
         position: relative;
         left: 20%;
-    }
-  }
-  @media (min-width: 1920px) {
-    p{
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 20px;
-    }
-    hr{
-        width: 570px;
-        position: relative;
-        left: 0%;
-    }
-    img{
-        width: 400px;
-        height: 300px;
-    }
-    div.img{
-        position:relative;
-        left: 5%;
-    }
-    .meme{
-        position: relative;
-        left: 35%;
     }
   }
 </style>
