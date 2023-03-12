@@ -9,12 +9,17 @@ body {
 }
 img{
   display: none;
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
+  transition-property: width;
+  transition-property: heigt;
+  transition-duration: 2s;
 }
 input[name="mem"]:checked + label div img
 {
     display: block;
+    width: 200px;
+    height: 150px;
 }
 input[name="mem"]:hover + label div img
 {

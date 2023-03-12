@@ -9,16 +9,21 @@ body {
 }
 img{
   display: none;
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
 }
 input[name="mem"]:checked + label div img
 {
     display: block;
+    transform:scale(2);
 }
 input[name="mem"]:hover + label div img
 {
     display: block;
+    -webkit-
+    transform:scale(2);
     cursor: pointer;
 }
 input{
@@ -33,7 +38,6 @@ p{
 }
 p.description{
     cursor: pointer;
-    width: 530px;
 }
 div.plus{
     float:right;
@@ -52,16 +56,17 @@ div.img{
 div.stroka{
     display: flex;
     align-items: center;
+    width: 600px;
 }
 @media (min-width: 320px) {
     p{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 20px;
         font-weight: 600;
-        width: 100%;
+        width: 320;
     }
     hr{
-        width: 100%;
+        width: 320px;
     }
     img{
         width: 200px;
@@ -70,9 +75,6 @@ div.stroka{
     div.img{
         position:relative;
         left: 0%;
-    }
-    p.description{
-        width: 80%;
     }
     .meme{
         position: relative;
@@ -85,7 +87,7 @@ div.stroka{
         font-size: 30px;
     }
     hr{
-        width: 63%;
+        width: 820px;
     }
     img{
         width: 400px;
@@ -94,9 +96,6 @@ div.stroka{
     div.img{
         position:relative;
         left: 0%;
-    }
-    p.description{
-        width: 55%;
     }
     .meme{
         position: relative;
@@ -114,8 +113,8 @@ div.stroka{
         left: 0%;
     }
     img{
-        width: 400px;
-        height: 300px;
+        width: 200px;
+        height: 150px;
     }
     div.img{
         position:relative;

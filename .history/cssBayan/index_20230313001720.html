@@ -9,17 +9,24 @@ body {
 }
 img{
   display: none;
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
+  transition-property:width;
+  transition-property:heaigt;
+  transition-duration: 2s;
 }
 input[name="mem"]:checked + label div img
 {
     display: block;
+    width: 400px;
+    height: 300px;
 }
 input[name="mem"]:hover + label div img
 {
     display: block;
     cursor: pointer;
+    width: 400px;
+    height: 300px;
 }
 input{
     display: none;
@@ -114,8 +121,8 @@ div.stroka{
         left: 0%;
     }
     img{
-        width: 400px;
-        height: 300px;
+        width: 200px;
+        height: 150px;
     }
     div.img{
         position:relative;
